@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scientific Calculator</title>
+  <link rel="stylesheet" href="scientific.css">
+</head>
+<body>
+  <main class="page">
+    <header class="site-header">
+      <h1>Scientific Calculator</h1>
+      <nav aria-label="Calculator navigation">
+        <a class="nav-link" href="index.html">Simple Calculator</a>
+        <a class="nav-link active" href="scientific.html">Scientific Calculator</a>
+      </nav>
+    </header>
+
+    <section class="calculator-card" aria-label="Scientific calculator">
+      <h2>Scientific Calculator</h2>
+      <div class="mode-row">
+        <span>Angle mode:</span>
+        <button id="angleMode" class="mode-button" type="button" aria-pressed="false">DEG</button>
+      </div>
+      <input id="display" class="display" type="text" aria-label="Calculator display"
+             placeholder="0" readonly>
+      <div class="keys">
+        <button class="key utility" data-action="clear">AC</button>
+        <button class="key utility" data-action="delete">DEL</button>
+        <button class="key function" data-action="open">(</button>
+        <button class="key function" data-action="close">)</button>
+        <button class="key operator" data-value="/">÷</button>
+
+        <button class="key function" data-action="sin">sin</button>
+        <button class="key function" data-action="cos">cos</button>
+        <button class="key function" data-action="tan">tan</button>
+        <button class="key function" data-action="sqrt">√</button>
+        <button class="key operator" data-value="*">×</button>
+
+        <button class="key function" data-action="log">log</button>
+        <button class="key function" data-action="ln">ln</button>
+        <button class="key function" data-action="square">x²</button>
+        <button class="key function" data-action="power">xʸ</button>
+        <button class="key operator" data-value="-">−</button>
+
+        <button class="key" data-value="7">7</button>
+        <button class="key" data-value="8">8</button>
+        <button class="key" data-value="9">9</button>
+        <button class="key function" data-action="pi">π</button>
+        <button class="key operator" data-value="+">+</button>
+
+        <button class="key" data-value="4">4</button>
+        <button class="key" data-value="5">5</button>
+        <button class="key" data-value="6">6</button>
+        <button class="key function" data-action="e">e</button>
+        <button class="key utility" data-action="percent">%</button>
+
+        <button class="key" data-value="1">1</button>
+        <button class="key" data-value="2">2</button>
+        <button class="key" data-value="3">3</button>
+        <button class="key" data-value="0">0</button>
+        <button class="key" data-value=".">.</button>
+
+        <button class="key wide" data-action="ans">Ans</button>
+        <button class="key equals wide" data-action="equals">=</button>
+      </div>
+      <p id="message" class="message" role="status"></p>
+      <p class="hint">sin, cos and tan use degrees by default. Tap DEG to switch to radians.</p>
+    </section>
+    <footer>Student project • HTML, CSS &amp; JavaScript</footer>
+  </main>
+  <script src="scientific.js"></script>
+</body>
+</html>

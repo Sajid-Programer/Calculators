@@ -1,0 +1,24 @@
+* { box-sizing: border-box; }
+:root { font-family: Arial, Helvetica, sans-serif; color: #172033; background: #eef2ff; }
+body { margin: 0; min-height: 100vh; }
+.page { width: min(100% - 28px, 760px); margin: 0 auto; padding: 28px 0; }
+.site-header { text-align: center; margin-bottom: 24px; }
+.site-header h1 { margin: 0 0 8px; font-size: clamp(1.8rem, 5vw, 2.5rem); }
+.site-header p { margin: 0 auto 18px; color: #596579; line-height: 1.5; }
+nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+.nav-link { text-decoration: none; color: #35415c; background: white; border: 1px solid #d7deed; padding: 10px 15px; border-radius: 10px; font-weight: 700; }
+.nav-link.active, .nav-link:hover { background: #4f46e5; color: white; border-color: #4f46e5; }
+.calculator-card { width: min(100%, 390px); margin: 0 auto; padding: 24px; background: white; border-radius: 22px; box-shadow: 0 16px 45px #26346a1c; }
+.calculator-card h2 { text-align: center; margin: 0 0 18px; }
+.display { display: block; width: 100%; height: 76px; margin-bottom: 16px; padding: 12px 16px; border: 1px solid #dce2ef; border-radius: 12px; background: #f8faff; color: #172033; text-align: right; font-size: 2rem; font-weight: 700; }
+.keys { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+.key { min-height: 58px; border: 0; border-radius: 12px; background: #f0f3fa; color: #172033; font-size: 1.15rem; font-weight: 700; cursor: pointer; transition: transform .08s, filter .15s; }
+.key:hover { filter: brightness(.96); }
+.key:active { transform: scale(.97); }
+.key.operator { background: #e0e7ff; color: #3730a3; }
+.key.utility { background: #e8edf5; color: #374151; }
+.key.equals { background: #4f46e5; color: white; }
+.key.wide { grid-column: span 2; }
+.message { min-height: 20px; margin: 12px 0 0; text-align: center; color: #b42318; font-size: .9rem; }
+footer { margin-top: 24px; text-align: center; color: #657087; font-size: .9rem; }
+@media (max-width: 420px) { .calculator-card { padding: 18px; } .key { min-height: 54px; } }

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="site-header">
+      <h1>Simple Calculator</h1>
+      <nav aria-label="Calculator navigation">
+        <a class="nav-link active" href="index.html">Simple Calculator</a>
+        <a class="nav-link" href="scientific.html">Scientific Calculator</a>
+      </nav>
+    </header>
+
+    <section class="calculator-card" aria-label="Simple calculator">
+      <h2>Simple Calculator</h2>
+      <input id="display" class="display" type="text" inputmode="decimal"
+             aria-label="Calculator display" placeholder="0" readonly>
+      <div class="keys">
+        <button class="key utility" data-action="clear">AC</button>
+        <button class="key utility" data-action="delete">DEL</button>
+        <button class="key utility" data-action="percent">%</button>
+        <button class="key operator" data-value="/">÷</button>
+
+        <button class="key" data-value="7">7</button>
+        <button class="key" data-value="8">8</button>
+        <button class="key" data-value="9">9</button>
+        <button class="key operator" data-value="*">×</button>
+
+        <button class="key" data-value="4">4</button>
+        <button class="key" data-value="5">5</button>
+        <button class="key" data-value="6">6</button>
+        <button class="key operator" data-value="-">−</button>
+
+        <button class="key" data-value="1">1</button>
+        <button class="key" data-value="2">2</button>
+        <button class="key" data-value="3">3</button>
+        <button class="key operator" data-value="+">+</button>
+
+        <button class="key wide" data-value="0">0</button>
+        <button class="key" data-value=".">.</button>
+        <button class="key equals" data-action="equals">=</button>
+      </div>
+      <p id="message" class="message" role="status"></p>
+    </section>
+    <footer>Student project • HTML, CSS &amp; JavaScript</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
